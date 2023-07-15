@@ -1,2 +1,4 @@
+code2flow==2.5.1
 Flask==2.3.2
+mermaid==0.3.2
 Requests==2.31.0
