@@ -15,7 +15,7 @@ This project provides a Python package named `weather_api` that interacts with t
 
 ## Configuration
 
-Before using the `weather_api` package, you need to obtain an API key from OpenWeatherMap. Then set your API key as an environment variable named `API_KEY` on your system. 
+Before using the `weather_api` package, you need to obtain an API key from [OpenWeatherMap](https://openweathermap.org/api). Then set your API key as an environment variable named `API_KEY` on your system. 
 
 ```
 export API_KEY="YOUR_API_KEY"
@@ -23,7 +23,7 @@ export API_KEY="YOUR_API_KEY"
 
 ## Usage
 
-### API
+### Weather API
 
 The API allows you to retrieve the weekend weather forecast for a specific zip code.
 
@@ -39,7 +39,7 @@ The API allows you to retrieve the weekend weather forecast for a specific zip c
 
 3. The API will return a JSON response containing the weather forecast for the weekend.
 
-### CLI
+### Weather CLI
 
 The CLI provides a command-line interface to retrieve the weekend weather forecast for a specific zip code.
 
@@ -52,6 +52,16 @@ Replace `{zip_code}` with the desired zip code.
 Example: `python -m weather_api.cli 12345`
 
 The CLI will print the weather forecast for the weekend.
+
+### Diagram Generator
+
+The diagram generator creates a flowchart of the code in the `weather_api` directory.
+
+```
+python diagram/generate_diagram.py --directory weather_api --output weather_api.html
+```
+
+This will create an HTML file `weather_api.html` in the project directory, which contains a flowchart of the `weather_api` code.
 
 ## Contributing
 
