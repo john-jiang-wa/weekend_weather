@@ -17,8 +17,17 @@ This project provides a Python package named `weather_api` that interacts with t
 
 Before using the `weather_api` package, you need to obtain an API key from [OpenWeatherMap](https://openweathermap.org/api). Then set your API key as an environment variable named `API_KEY` on your system. 
 
-```
+
+For Unix-like systems:
+
+```bash
 export API_KEY="YOUR_API_KEY"
+```
+
+For Windows systems (using PowerShell):
+
+```powershell
+$env:API_KEY="YOUR_API_KEY"
 ```
 
 ## Usage
@@ -27,7 +36,20 @@ export API_KEY="YOUR_API_KEY"
 
 The API allows you to retrieve the weekend weather forecast for a specific zip code.
 
-1. Start the API server: `FLASK_APP=weather_api/api.py flask run --port={port_number}`. 
+1. Start the API server: 
+
+    For Unix-like systems:
+
+    ```bash
+    FLASK_APP=weather_api/api.py flask run --port={port_number}
+    ```
+
+    For Windows systems (using PowerShell):
+
+    ```powershell
+    $env:FLASK_APP="weather_api/api.py"
+    flask run --port={port_number}
+    ```
 
     Replace `{port_number}` with the desired port.
 
@@ -55,7 +77,7 @@ The CLI will print the weather forecast for the weekend.
 
 ### Diagram Generator
 
-The diagram generator creates a flowchart of the code in the `weather_api` directory.
+The diagram generator creates a flowchart of the code in the specified directory.
 
 ```
 python diagram/generate_diagram.py --directory weather_api --output weather_api.html
